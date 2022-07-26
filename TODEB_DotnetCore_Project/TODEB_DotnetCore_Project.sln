@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TODEB_DotnetCore_Project.Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TODEB_DotnetCore_Project.EntityLayer", "TODEB_DotnetCore_Project.EntityLayer\TODEB_DotnetCore_Project.EntityLayer.csproj", "{DA5DEF19-A0F4-4581-ACDC-1250DC8B2544}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TODEB_DotnetCore_Project.BusinessLayer", "..\..\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.BusinessLayer\TODEB_DotnetCore_Project.BusinessLayer.csproj", "{5C1BE197-543C-4C8C-A564-9CD612EEEEAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TODEB_DotnetCore_Project.Presentation", "..\..\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.Presentation\TODEB_DotnetCore_Project.Presentation.csproj", "{FC8A1EF7-18D5-4D80-A814-10B38AE077FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{DA5DEF19-A0F4-4581-ACDC-1250DC8B2544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA5DEF19-A0F4-4581-ACDC-1250DC8B2544}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA5DEF19-A0F4-4581-ACDC-1250DC8B2544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C1BE197-543C-4C8C-A564-9CD612EEEEAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1BE197-543C-4C8C-A564-9CD612EEEEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1BE197-543C-4C8C-A564-9CD612EEEEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1BE197-543C-4C8C-A564-9CD612EEEEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8A1EF7-18D5-4D80-A814-10B38AE077FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8A1EF7-18D5-4D80-A814-10B38AE077FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8A1EF7-18D5-4D80-A814-10B38AE077FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8A1EF7-18D5-4D80-A814-10B38AE077FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
