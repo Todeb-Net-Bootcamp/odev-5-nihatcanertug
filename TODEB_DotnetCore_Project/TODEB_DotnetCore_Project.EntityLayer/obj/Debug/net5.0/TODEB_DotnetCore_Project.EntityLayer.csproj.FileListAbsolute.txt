@@ -1,0 +1,12 @@
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\bin\Debug\net5.0\TODEB_DotnetCore_Project.EntityLayer.deps.json
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\bin\Debug\net5.0\TODEB_DotnetCore_Project.EntityLayer.dll
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\bin\Debug\net5.0\ref\TODEB_DotnetCore_Project.EntityLayer.dll
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\bin\Debug\net5.0\TODEB_DotnetCore_Project.EntityLayer.pdb
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\obj\Debug\net5.0\TODEB_DotnetCore_Project.EntityLayer.csprojAssemblyReference.cache
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\obj\Debug\net5.0\TODEB_DotnetCore_Project.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\obj\Debug\net5.0\TODEB_DotnetCore_Project.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\obj\Debug\net5.0\TODEB_DotnetCore_Project.EntityLayer.AssemblyInfo.cs
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\obj\Debug\net5.0\TODEB_DotnetCore_Project.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\obj\Debug\net5.0\TODEB_DotnetCore_Project.EntityLayer.dll
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\obj\Debug\net5.0\ref\TODEB_DotnetCore_Project.EntityLayer.dll
+C:\Users\W10\source\repos\odev-4-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\obj\Debug\net5.0\TODEB_DotnetCore_Project.EntityLayer.pdb
