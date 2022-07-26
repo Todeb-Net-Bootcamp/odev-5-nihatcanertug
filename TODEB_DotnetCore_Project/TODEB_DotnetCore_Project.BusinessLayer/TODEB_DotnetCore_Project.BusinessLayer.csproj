@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\odev-5-nihatcanertug\TODEB_DotnetCore_Project\DataAccessLayer\TODEB_DotnetCore_Project.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\..\odev-5-nihatcanertug\TODEB_DotnetCore_Project\TODEB_DotnetCore_Project.EntityLayer\TODEB_DotnetCore_Project.EntityLayer.csproj" />
+  </ItemGroup>
+
+</Project>
