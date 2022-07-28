@@ -13,18 +13,20 @@ namespace TODEB_DotnetCore_Project.BusinessLayer.Concrete
     public class CustomerService : ICustomerService
     {
         private readonly ICustomerRepository _repository;
+        private IMapper _mapper;
 
-        public CustomerService(ICustomerRepository repository)
+        public CustomerService(ICustomerRepository repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
-        public CommandResponse Delete(Customer customer)
+        public CommandResponse Delete(DeleteCustomerRequest request)
         {
             _repository.Delete(customer);
             return new CommandResponse
             {
                 Status = true,
-                Message = $"Musteri silindi. Id = {customer.Id}"
+                Message = $"Musteri silindi. Id = {request.Id}"
             };
         }
 
@@ -33,23 +35,47 @@ namespace TODEB_DotnetCore_Project.BusinessLayer.Concrete
             return _repository.GetAll();
         }
 
-        public CommandResponse Insert(Customer customer)
+        public CommandResponse Insert(CreateCustomerRequest request)
         {
+            var entity = _mapper.Map<Customer>(request);
+
+            var validator = new CreateCustomerRequestValidator();
+            var valid = validator.Validate(request);
+
+            //var entity = new Customer();
+            //entity.Email = request.Email;
+            //entity.Phone = request.Phone;
+            //entity.Name = request.Name;
+            //entity.Surname = request.Surname;
+
+            if(valid.IsValid == false)
+                throw new Exception("Hata olustu!");
+
             _repository.Insert(customer);
             return new CommandResponse
             {
                 Status = true,
-                Message = $"Musteri kayit edildi. Id = {customer.Id}"
+                Message = $"Musteri kayit edildi. Id = {request.Id}"
             };
         }
 
-        public CommandResponse Update(Customer customer)
+        public CommandResponse Update(UpdateCustomerRequest request)
         {
-            _repository.Update(customer);
+            
+            var validator = new UpdateCustomerRequestValidator();
+            var valid = validator.Validate(request);
+
+            var entity = _repository.Get(request.Id);
+            if(entity == null)
+                throw new Exception("veri tabanında kayıt bulunamadı");
+
+            if(valid.IsValid == false)
+                throw new Exception("Hata olustu!");
+            _repository.Update(request);
             return new CommandResponse
             {
                 Status = true,
-                Message = $"Musteri guncellendi. Id = {customer.Id}"
+                Message = $"Musteri guncellendi. Id = {request.Id}"
             };
         }
     }

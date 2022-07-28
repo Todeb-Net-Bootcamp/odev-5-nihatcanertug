@@ -11,8 +11,8 @@ namespace TODEB_DotnetCore_Project.BusinessLayer.Abstract
     public interface ICustomerService
     {
         public IEnumerable<Customer> GetAll();
-        public CommandResponse Insert(Customer customer);
-        public CommandResponse Update(Customer customer);
-        public CommandResponse Delete(Customer customer);
+        public CommandResponse Insert(CreateCustomerRequest customer);
+        public CommandResponse Update(UpdateCustomerRequest customer);
+        public CommandResponse Delete(DeleteCustomerRequest customer);
     }
 }

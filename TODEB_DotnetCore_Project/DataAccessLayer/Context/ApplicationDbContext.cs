@@ -10,6 +10,12 @@ namespace DataAccessLayer.Context
 {
     public class ApplicationDbContext : DbContext
     {
+        private IConfiguration _configuration;
+
+        public ApplicationDbContext (IConfiguration configuration )
+	    {
+            _configuration = configuration;
+	    }
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Loan> Loans { get; set; }
@@ -17,7 +23,8 @@ namespace DataAccessLayer.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnConfiguring(optionsBuilder.UseSqlServer(@"Server=NIHOO;Database=TODEB_PROJECTDB;uid=nihatcan;pwd=123;"));
+            var connectionString = _configuration.GetConntectionString("MsComm");
+            base.OnConfiguring(optionsBuilder.UseSqlServer(connectionString));
         }
     }
 }

@@ -13,5 +13,6 @@ namespace TODEB_DotnetCore_Project.DataAccessLayer.Abstract
         public void Insert(Customer customer);
         public void Update(Customer customer);
         public void Delete(Customer customer);
+        public Customer Get(int id);
     }
 }

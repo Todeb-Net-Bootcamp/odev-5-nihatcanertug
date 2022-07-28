@@ -25,6 +25,16 @@ namespace TODEB_DotnetCore_Project.Presentation
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApplicationDbContext>(ServiceLifetime.Transient);
+            services.AddScoped<IValidator<CreateCustomerRequest>, CreateCustomerRequestValidator>();
+
+            services.AddAutoMapper(config => 
+            {
+                config.AddProfile(new MapperProfile());
+            });
+
+            services.AddScoped<ICustomerService,CustomerService>();
+            services.AddScoped<ICustomerRepository,CustomerRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

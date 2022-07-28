@@ -38,5 +38,9 @@ namespace TODEB_DotnetCore_Project.DataAccessLayer.Concrete
             context.Customers.Update(customer);
             context.SaveChanges();
         }
+        public Customer Get(int id)
+        {
+            return context.Customers.FirstOrDefault(x => x.Id == id);
+        }
     }
 }
